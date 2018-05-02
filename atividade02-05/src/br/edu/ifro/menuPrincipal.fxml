@@ -7,9 +7,14 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.menuPrincipalController">
-    <children>
-        <Button fx:id="button" layoutX="144.0" layoutY="161.0" onAction="#handleButtonAction" text="Ok" />
-      <JFXButton layoutX="62.0" layoutY="65.0" text="Ok" />
-    </children>
+<AnchorPane id="AnchorPane" prefHeight="208.0" prefWidth="322.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.menuPrincipalController">
+   <children>
+      <JFXTextField fx:id="txtNumero1" layoutX="14.0" layoutY="32.0" />
+      <JFXTextField fx:id="txtNumero2" layoutX="14.0" layoutY="91.0" />
+      <JFXTextField fx:id="txtResultado" layoutX="14.0" layoutY="147.0" />
+      <Label layoutX="22.0" layoutY="24.0" text="Numero 1" />
+      <Label layoutX="22.0" layoutY="83.0" text="Numero 2" />
+      <Label layoutX="22.0" layoutY="139.0" text="Resultado" />
+      <JFXButton fx:id="btnSoma" layoutX="223.0" layoutY="45.0" onAction="#soma" text="Somar" />
+   </children>
 </AnchorPane>
